@@ -27,7 +27,7 @@ CrossQubit::CrossQubit(G4RotationMatrix * pRot, // To Rotate the Qubit
 		G4bool pMany, // If you want to copy the same geometry
 		 G4int pCopyNo, //Number of the Copy
              	G4bool pSurfChk) // To check intersection with other geometries. True or False
-
+```
 You can acces to the following attributes Xf and Yf, those are the coordinates of the center of the Cross Qubit. You will need those values to do a Phonon Collection Efficiency. This is an example of the initialization of the Class
 ```cpp
 CrossQubit *Qubit1= new CrossQubit(rotPart,G4ThreeVector(XQ1,YQ1,0),"Qubit1",400,300,GapQubitX,GapQubitY,0.0,log_GroundPlaneMesh,true,false,0,checkOverlaps);
