@@ -36,9 +36,8 @@ You can acces to the following attributes Xf and Yf, those are the coordinates o
 ```cpp
 CrossQubit_1 *Qubit1Cr= new CrossQubit_1(0,G4ThreeVector(Xf,Yf,0),"Qubit1Cr",320,25,25,320,0.0,log_GroundPlaneMesh,true,false,0,checkOverlaps);
 ```
-<div align="center">
 ![Workflow Diagram](Cross_Qubit.png)
-</div>
+
 
 
 
