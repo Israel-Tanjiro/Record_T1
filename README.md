@@ -21,9 +21,9 @@ CrossQubit::CrossQubit(G4RotationMatrix * pRot, // To Rotate the Qubit
               	G4double  LX2,// X dimensions must be in microns
               	G4double  LY2,// Y dimensios must be in microns
               	G4double Gap, // X dimension of the Vaccum Gap 
-		G4LogicalVolume * pMotherLogical,
-		G4bool GroundPlane,
-		G4int Refle,
-		G4bool pMany,
-		 G4int pCopyNo,
-             	G4bool pSurfChk)
+		G4LogicalVolume * pMotherLogical, // Place to put the Qubit
+		G4bool GroundPlane, // Option to build the Cross Qubit without Vaccum Gap. You must put false
+		G4int Refle, // Parameter to put the Cross Qubit above the Y axis. Only 0 or 1 for 1 above of Y axis
+		G4bool pMany, // If you want to copy the same geometry
+		 G4int pCopyNo, //Number of the Copy
+             	G4bool pSurfChk) // To check intersection with other geometries. True or False
