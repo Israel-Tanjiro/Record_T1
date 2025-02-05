@@ -40,8 +40,24 @@ CrossQubit_1 *Qubit1Cr= new CrossQubit_1(0,G4ThreeVector(Xf,Yf,0),"Qubit1Cr",320
 
 ## Transmission Line
 The Class contain the Following Parameters.
+```cpp
+Tranmission_line::Tranmission_line(G4RotationMatrix * pRot,// To Rotate the Qubit
+		const G4ThreeVector & tLate, //Iniial Cooodinates (Green point see Figure 1)
+		const G4String & pName,
+		G4double  CPWlenght,
+             	G4double  CPWWidth,
+   		G4double  XRectangle,// Length of Rectangle in X direction
+		G4double  YRectangle,// Height of Rectangle in Y direction
+             	G4double  Thicknnes,//
+		G4double  SBase,
+		G4double  HeightTrap,
+		G4LogicalVolume * pMotherLogical,
+		G4bool GroundPlane,
+		G4bool pMany,
+		G4int pCopyNo,
+		G4bool pSurfChk)
 
-
+```
 
 
 
